@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: beige;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.left-column {
+  margin-top: 115px;
+  background-color: hsl(31, 77%, 52%);
+  height: 450px;
+  width: 300px;
+  border-bottom-left-radius: 11px;
+  border-top-left-radius: 11px;
+}
+
+.center-column {
+  margin-top: 115px;
+  background-color: hsl(184, 100%, 22%);
+  height: 450px;
+  width: 300px;
+}
+
+.right-column {
+  margin-top: 115px;
+  background-color: hsl(179, 100%, 13%);
+  height: 450px;
+  width: 300px;
+  border-top-right-radius: 11px;
+  border-bottom-right-radius: 11px;
+}
+
+svg {
+  margin: 30px 30px 30px 40px;
+}
+
+.column-header {
+  color: hsl(0, 0%, 95%);
+  font-size: 2.8rem;
+  font-family: "Big Shoulders Display";
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 40px;
+}
+
+.column-para {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca";
+  text-align: left;
+  padding: 10px 40px;
+  margin-right: 40px;
+  font-size: 0.9rem;
+  line-height: 2;
+}
+
+.cta {
+  padding: 10px 30px;
+  margin-left: 40px;
+  margin-top: 50px;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  border-radius: 20px;
+  border-style: none;
+  border: 2px solid hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+
+.button-a {
+  color: hsl(31, 77%, 52%);
+}
+
+.button-b {
+  color: hsl(184, 100%, 22%);
+}
+
+.cta:hover {
+  background: linear-gradient(45deg, #d45607, #10eaea);
+  border: 2px solid;
+  color: hsl(0, 0%, 95%);
+}
+
+.button-a:active {
+  background: transparent;
+  border: 2px solid;
+  color: hsl(0, 0%, 95%);
+}
+
+.button-b:active {
+  background: transparent;
+  border: 2px solid;
+  color: hsl(0, 0%, 95%);
+}
+
+.button-c {
+  color: hsl(179, 100%, 13%);
+}
+.button-c:active {
+  background: transparent;
+  border: 2px solid;
+  color: hsl(0, 0%, 95%);
+}
+
+@media all and (max-width: 375px) {
+  .container {
+    margin: 0;
+    padding: 60px 20px 60px 40px;
+    flex-direction: column;
+    height: 80%;
+    width: 100vw;
+    border-radius: 0;
+    overflow: hidden;
+  }
+  .left-column {
+    height: 400px;
+    margin: 0;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+    border-bottom-left-radius: 0;
+  }
+  .center-column {
+    height: 400px;
+    margin: 0;
+  }
+
+  .right-column {
+    height: 400px;
+    margin: 0;
+    border-bottom-left-radius: 11px;
+    border-top-right-radius: 0;
+  }
+  .cta {
+    margin-top: 20px;
+  }
+}
